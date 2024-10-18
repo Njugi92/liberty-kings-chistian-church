@@ -1,0 +1,102 @@
+/* General Blog Page Styles */
+.blog-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.blog-section {
+    margin-bottom: 40px;
+}
+
+.blog-title-christian {
+    color: #36ae9a;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.blog-title-testimony {
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.blog-title-love {
+    color: #36ae9a;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.blog-paragraph {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.read-more-btn {
+    background-color: #36ae9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.read-more-btn:hover {
+    background-color: #2f8f7a;
+}
+
+/* Testimony Section */
+.testimony-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimony-left {
+    width: 65%;
+}
+
+.testimony-right {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.testimony-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimony-content {
+        flex-direction: column;
+    }
+
+    .testimony-left,
+    .testimony-right {
+        width: 100%;
+    }
+
+    .testimony-image {
+        margin-top: 20px;
+    }
+
+    .blog-title-christian,
+    .blog-title-testimony,
+    .blog-title-love {
+        font-size: 28px;
+    }
+
+    .blog-paragraph {
+        font-size: 16px;
+    }
+}

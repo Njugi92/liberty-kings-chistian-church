@@ -1,0 +1,128 @@
+.contribution-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contribution-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    color: #36ae9a;
+}
+
+.contribution-subtitle {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.contribution-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contribution-left {
+    flex: 1;
+}
+
+.contribution-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.contribution-right {
+    flex: 1;
+    text-align: left;
+}
+
+.contribution-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Remove default bullets completely */
+.contribution-list {
+    list-style: none;
+    /* Ensure no default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.contribution-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    /* Adjust line height for better readability */
+    position: relative;
+    /* For positioning custom bullet */
+    padding-left: 40px;
+    /* Space for custom bullet */
+}
+
+/* Custom dot with color #36ae9a */
+.contribution-list li::before {
+    content: '•';
+    font-size: 30px;
+    color: #36ae9a;
+    position: absolute;
+    /* Ensure the custom dot is positioned */
+    left: 0;
+    /* Align the custom dot to the left of the text */
+    top: 0;
+    /* Align the bullet with the top of the text */
+    line-height: 1.2;
+    /* Adjust alignment of the dot */
+}
+
+/* Maintain correct coloring for specific text within the list */
+.contribution-list .highlight-text {
+    color: #36ae9a;
+}
+
+.donate-button {
+    background-color: #36ae9a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #2d947d;
+}
+
+@media (max-width: 768px) {
+    .contribution-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contribution-right {
+        text-align: center;
+    }
+
+    .contribution-heading {
+        font-size: 24px;
+    }
+
+    .contribution-list li {
+        font-size: 16px;
+    }
+
+    .donate-button {
+        font-size: 16px;
+    }
+}

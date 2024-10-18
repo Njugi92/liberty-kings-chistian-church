@@ -1,0 +1,214 @@
+/* General styling */
+.donate-page {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cover Background and Columns */
+.donate-cover {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    background-color: #36ae9a;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.left-column {
+    flex: 1;
+    color: white;
+    padding-right: 20px;
+}
+
+.right-column {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Align items to the start */
+}
+
+/* Remaining section */
+.remaining-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+/* Title and Description */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Unordered List */
+.donation-benefits {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.donation-benefits li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.dot {
+    font-size: 28px;
+    color: white;
+    margin-right: 10px;
+}
+
+/* "More About Our Cause" Section */
+.more-title {
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Right Column (White Section) */
+.impact-section {
+    padding-top: 10px;
+}
+
+/* Impact Title */
+.impact-title {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Contribution Title */
+.contribution-title {
+    font-size: 24px;
+    color: #36ae9a;
+    margin: 20px 0;
+    /* Add margin to the top and bottom */
+    text-align: center;
+    /* Ensure title is centered */
+}
+
+/* Form Styling */
+.donation-form {
+    margin-top: 30px;
+    /* Add margin to push form downward */
+}
+
+.donation-form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.donation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.amount-input {
+    position: relative;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+    color: #36ae9a;
+}
+
+.credit-card-input {
+    display: flex;
+    align-items: center;
+}
+
+.credit-card-icon {
+    color: #36ae9a;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.expiry-input input {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.robot-verification {
+    display: flex;
+    align-items: center;
+}
+
+.robot-verification input {
+    margin-right: 10px;
+}
+
+.recap-icon {
+    margin-left: auto;
+    font-size: 24px;
+    color: #36ae9a;
+    cursor: pointer;
+}
+
+/* Donate Button */
+.donate-button {
+    background-color: #36ae9a;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.donate-button:hover {
+    background-color: #2d947d;
+}
+
+.shilling-help {
+    text-align: center;
+    margin-top: 10px;
+    color: #36ae9a;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-cover {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 20px;
+    }
+
+    .contribution-title {
+        font-size: 22px;
+        /* Adjust font size for smaller screens */
+    }
+}

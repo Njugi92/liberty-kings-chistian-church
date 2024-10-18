@@ -1,0 +1,120 @@
+.header {
+    background-color: #36ae9a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e0e0e0;
+}
+
+.get-in-touch {
+    margin-left: auto;
+
+    /* Always align the Get in Touch button to the right */
+}
+
+.get-in-touch-btn {
+    background-color: white;
+    color: #36ae9a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.get-in-touch-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Show menu icon and hide nav items on screens smaller than 800px */
+@media (max-width: 800px) {
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #007bff;
+        /* Blue background when menu is opened */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-link {
+        color: white;
+        /* Ensure the text is white on blue background */
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-link:hover {
+        background-color: #0056b3;
+        /* Darker blue on hover */
+    }
+
+    /* Ensure Get in Touch remains on the right */
+    .get-in-touch {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .get-in-touch-btn {
+        background-color: white;
+        color: #36ae9a;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .get-in-touch-btn:hover {
+        background-color: #e0e0e0;
+    }
+}

@@ -1,0 +1,91 @@
+.activities-section {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.activities-intro {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.activities-heading {
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.activities-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    /* Hidden by default */
+    transform: translateX(-100px);
+    /* Start off-screen */
+    transition: all 1s ease-in-out;
+}
+
+.card.animate {
+    opacity: 1;
+    /* Visible after animation */
+    transform: translateX(0);
+    /* Moves to final position */
+}
+
+.card-image {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.card1-image {
+    background-image: url('/community-p.jpg');
+    /* Replace with your image */
+}
+
+.card2-image {
+    background-image: url('/devotional2-r.png');
+    /* Replace with your image */
+}
+
+.card3-image {
+    background-image: url('/personal2-conn.png');
+    /* Replace with your image */
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #36ae9a;
+}
+
+@media (max-width: 768px) {
+    .activities-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

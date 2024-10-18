@@ -1,0 +1,50 @@
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    /* Adds spacing between the two rows */
+}
+
+.contact-left {
+    display: flex;
+    align-items: center;
+}
+
+.church-logo {
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.contact-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    color: #36ae9a;
+    font-size: 24px;
+}
+
+.spacer {
+    width: 20px;
+    /* Small space between the contact and location */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-right {
+        justify-content: center;
+        gap: 10px;
+    }
+}

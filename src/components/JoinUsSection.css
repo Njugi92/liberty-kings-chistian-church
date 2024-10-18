@@ -1,0 +1,79 @@
+.join-us-section {
+    background-color: #36ae9a;
+    color: white;
+    padding: 50px 20px;
+    /* Reduced height */
+    text-align: center;
+    min-height: 50vh;
+    /* Ensure the section takes less vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.join-us-section.visible {
+    opacity: 1;
+}
+
+.join-us-title {
+    font-size: 40px;
+    /* Slightly larger font */
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Smaller space between title and description */
+    margin-top: 0;
+    /* Position closer to the top */
+}
+
+.join-us-description {
+    font-size: 24px;
+    /* Bigger text size */
+    max-width: 900px;
+    /* Increased width for better spread */
+    margin: 20px auto 40px auto;
+    /* More spacing for better readability */
+    line-height: 1.8;
+    /* Increase line spacing for better spread */
+}
+
+.join-us-button {
+    background-color: white;
+    color: #36ae9a;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    /* Oval shaped button */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.join-us-button:hover {
+    background-color: #f0f0f0;
+    /* Slight change on hover */
+}
+
+@media (max-width: 768px) {
+    .join-us-title {
+        font-size: 32px;
+        /* Slightly smaller on mobile */
+    }
+
+    .join-us-description {
+        font-size: 18px;
+        /* Adjusted text size for mobile */
+        max-width: 100%;
+        /* Ensure it spans most of the mobile screen */
+        margin: 15px auto 30px auto;
+        /* Adjust spacing for smaller screens */
+    }
+
+    .join-us-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
